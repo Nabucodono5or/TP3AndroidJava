@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TP3AndroidJava</string>
+    <string name="nome">Nome</string>
+    <string name="senha">Senha</string>
+    <string name="email">Email</string>
+    <string name="telefone">Telefone</string>
+    <string name="celular">Celular</string>
+    <string name="cpf">CPF</string>
+    <string name="cidade">Cidade</string>
+    <string name="btn_limpar">Limpar</string>
+    <string name="hint_cpf">xxx.xxx.xxx-xx</string>
+    <string name="btn_salvar">Salvar</string>
+    <string name="btn_usuarios">Visualisar Usuários</string>
+</resources>
