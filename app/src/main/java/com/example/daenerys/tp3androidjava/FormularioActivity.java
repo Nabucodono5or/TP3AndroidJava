@@ -26,6 +26,7 @@ public class FormularioActivity extends AppCompatActivity {
     private DatabaseReference mDatabase;
     String userId;
     private static final String TAG = "MyFirstFireBase";
+    FirebaseDatabase firebaseDatabase;
 
 
     @Override
@@ -33,7 +34,11 @@ public class FormularioActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formulario);
 
-        mDatabase = FirebaseDatabase.getInstance().getReference();
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        firebaseDatabase.setPersistenceEnabled(true);
+
+
+        mDatabase = firebaseDatabase.getReference();
 
         nome = findViewById(R.id.editTextNome);
         senha = findViewById(R.id.editTextSenha);

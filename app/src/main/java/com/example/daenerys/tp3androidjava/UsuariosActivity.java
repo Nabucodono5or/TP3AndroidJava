@@ -31,6 +31,7 @@ public class UsuariosActivity extends AppCompatActivity implements AdapterView.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_usuarios);
 
+
         nomesUsuarios = new ArrayList<>();
         usuarios = new ArrayList<>();
         mDatabase = FirebaseDatabase.getInstance().getReference("users");
@@ -45,6 +46,10 @@ public class UsuariosActivity extends AppCompatActivity implements AdapterView.O
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 User user = dataSnapshot.getValue(User.class);
+                if(user == null){
+                    menssagem("nenhum registro foi encontrado");
+                }
+
                 nomesUsuarios.add(user.nome);
                 usuarios.add(user);
                 arrayAdapter.notifyDataSetChanged();
