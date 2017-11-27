@@ -48,11 +48,11 @@ public class UsuariosActivity extends AppCompatActivity implements AdapterView.O
                 User user = dataSnapshot.getValue(User.class);
                 if(user == null){
                     menssagem("nenhum registro foi encontrado");
+                }else {
+                    nomesUsuarios.add(user.nome);
+                    usuarios.add(user);
+                    arrayAdapter.notifyDataSetChanged();
                 }
-
-                nomesUsuarios.add(user.nome);
-                usuarios.add(user);
-                arrayAdapter.notifyDataSetChanged();
             }
 
             @Override
