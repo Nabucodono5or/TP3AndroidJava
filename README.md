@@ -12,7 +12,7 @@ Build → Build APK
 
 ## Biblioteca
 
-Permite a conexão com o banco de dados do firebird.
+Permite a conexão com o banco de dados do firebird. Para mais informação acesse [Firebird Realtime Database ](https://firebase.google.com/docs/database/android/start/?hl=pt-br)
 
 com.google.firebase:firebase-database:11.0.4
 
@@ -26,4 +26,4 @@ com.google.firebase:firebase-database:11.0.4
 </Table>
 
 ## Licença
-Sob a licença [MIT]()
+Sob a licença [MIT](https://github.com/Nabucodono5or/TP3AndroidJava/blob/master/LICENSE)
